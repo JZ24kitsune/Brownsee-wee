@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brownsee Wee | My Paw-some Life</title>
+<style>
+:root {
+  --red: #a52d3a;
+  --cream: #fff8ef;
+  --gold: #d6b36e;
+  --brown: #49352f;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--brown);
+  font-family: Georgia, serif;
+  line-height: 1.7;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 18px 6%;
+  background: white;
+  border-bottom: 1px solid #eadbc8;
+}
+.logo { color: var(--red); font-size: 23px; font-weight: bold; }
+nav a {
+  color: var(--brown);
+  text-decoration: none;
+  margin: 0 8px;
+  font-family: Arial, sans-serif;
+}
+nav a:hover { color: var(--red); }
+.hero {
+  text-align: center;
+  padding: 85px 20px;
+  background: linear-gradient(135deg, #fff8ef, #f4e3d2);
+}
+.eyebrow {
+  color: var(--red);
+  font: bold 12px Arial, sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+h1 {
+  color: var(--red);
+  font-size: clamp(45px, 8vw, 78px);
+  line-height: 1.1;
+  margin: 20px 0;
+}
+h2 { font-size: clamp(28px, 5vw, 42px); }
+.hero p {
+  max-width: 620px;
+  margin: 0 auto 25px;
+  color: #78675d;
+  font-size: 18px;
+}
+.button {
+  display: inline-block;
+  background: var(--red);
+  color: white;
+  padding: 13px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font: bold 14px Arial, sans-serif;
+}
+.button:hover { background: #76202b; }
+section { padding: 65px 7%; text-align: center; }
+.paper { background: #fffdf9; border-block: 1px solid #efdfcc; }
+.content { max-width: 780px; margin: auto; }
+.story {
+  text-align: left;
+  background: white;
+  border: 1px solid #efdfcc;
+  padding: 30px;
+  border-radius: 18px;
+  margin-top: 28px;
+}
+.story p { color: #78675d; }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 30px auto 0;
+  text-align: left;
+}
+.card {
+  padding: 24px;
+  background: white;
+  border: 1px solid #efdfcc;
+  border-radius: 16px;
+}
+.card p { color: #78675d; }
+.icon { font-size: 32px; }
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  max-width: 1000px;
+  margin: 30px auto;
+}
+.photo-slot {
+  min-height: 180px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  background: #f3e5d7;
+  border: 2px dashed #c7a98c;
+  border-radius: 16px;
+  color: #785d4c;
+}
+.photo-slot span { font-size: 32px; }
+footer {
+  text-align: center;
+  background: var(--brown);
+  color: white;
+  padding: 30px 15px;
+}
+@media(max-width:700px) {
+  nav { justify-content: center; }
+  .hero { padding: 60px 20px; }
+  .cards, .gallery { grid-template-columns: 1fr; }
+  .photo-slot { min-height: 130px; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">🐾 Brownsee Wee</div>
+  <div>
+    <a href="#story">My Story</a>
+    <a href="#adventures">Adventures</a>
+    <a href="#gallery">Photos</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="eyebrow">A little dog, a big world</div>
+  <h1>Life Through<br>My Paws</h1>
+  <p>
+    Hello, I'm Brownsee Wee! I travelled from Ireland
+    to Singapore, found my family, and began a new
+    chapter filled with love and adventures.
+  </p>
+  <a class="button" href="#story">Discover My Story ♥</a>
+</header>
+
+<section class="paper" id="story">
+  <div class="content">
+    <div class="eyebrow">My journey</div>
+    <h2>From Ireland to Singapore 🌍</h2>
+    <article class="story">
+      <h3>Every Paw Has a Story</h3>
+      <p>
+        My journey began in Ireland, far away from the
+        home I know today. I was transported all the
+        way to Singapore, where a new chapter of my
+        life was waiting to begin.
+      </p>
+      <p>
+        One day, my future owner's father chose me
+        from a pet shop and brought me home. That was
+        the beginning of my life with my family!
+      </p>
+      <p>
+        Today, I live happily in Singapore, surrounded
+        by the people who love me. Ireland was where
+        my journey began, but Singapore is where I
+        have made my home.
+      </p>
+      <p><strong>And my adventures are only beginning! ❤️</strong></p>
+    </article>
+  </div>
+</section>
+
+<section id="adventures">
+  <div class="eyebrow">Little paws, lovely memories</div>
+  <h2>My Little World</h2>
+  <div class="cards">
+    <article class="card">
+      <div class="icon">🌍</div>
+      <h3>My Journey</h3>
+      <p>From Ireland to Singapore, the journey that brought me home.</p>
+    </article>
+    <article class="card">
+      <div class="icon">🎾</div>
+      <h3>My Adventures</h3>
+      <p>My exciting discoveries, playful days and favourite places.</p>
+    </article>
+    <article class="card">
+      <div class="icon">💗</div>
+      <h3>My Everyday Life</h3>
+      <p>Cosy moments and all the little things that make life special.</p>
+    </article>
+  </div>
+</section>
+
+<section class="paper" id="gallery">
+  <div class="eyebrow">A thousand little memories</div>
+  <h2>My Photo Gallery 📸</h2>
+  <p>These spaces are ready for your own photos of Brownsee!</p>
+  <div class="gallery">
+    <div class="photo-slot">
+      <span>🐶</span>
+      <strong>Photo 1</strong>
+      <small>Add a photo when ready</small>
+    </div>
+    <div class="photo-slot">
+      <span>🐾</span>
+      <strong>Photo 2</strong>
+      <small>Add a photo when ready</small>
+    </div>
+    <div class="photo-slot">
+      <span>❤️</span>
+      <strong>Photo 3</strong>
+      <small>Add a photo when ready</small>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Made with ♥ for Brownsee Wee</p>
+  <small>Four paws. One big adventure. Endless memories.</small>
+</footer>
+
+</body>
+</html>
