@@ -4,236 +4,172 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Brownsee Wee | My Paw-some Life</title>
+<title>Brownsee Wee | Her Little World</title>
 <style>
-:root {
-  --red: #a52d3a;
-  --cream: #fff8ef;
-  --gold: #d6b36e;
-  --brown: #49352f;
-}
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
-  background: var(--cream);
-  color: var(--brown);
   font-family: Georgia, serif;
+  background: #fff8ef;
+  color: #49352f;
   line-height: 1.7;
 }
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
-  padding: 18px 6%;
-  background: white;
-  border-bottom: 1px solid #eadbc8;
+  background: #8f2635;
+  color: white;
+  padding: 18px;
+  text-align: center;
 }
-.logo { color: var(--red); font-size: 23px; font-weight: bold; }
 nav a {
-  color: var(--brown);
+  color: white;
+  margin: 10px;
   text-decoration: none;
-  margin: 0 8px;
-  font-family: Arial, sans-serif;
 }
-nav a:hover { color: var(--red); }
 .hero {
   text-align: center;
-  padding: 85px 20px;
-  background: linear-gradient(135deg, #fff8ef, #f4e3d2);
-}
-.eyebrow {
-  color: var(--red);
-  font: bold 12px Arial, sans-serif;
-  letter-spacing: 3px;
-  text-transform: uppercase;
+  padding: 75px 20px;
+  background: #f0d9c5;
 }
 h1 {
-  color: var(--red);
-  font-size: clamp(45px, 8vw, 78px);
+  font-size: clamp(42px, 8vw, 76px);
+  color: #8f2635;
   line-height: 1.1;
-  margin: 20px 0;
 }
-h2 { font-size: clamp(28px, 5vw, 42px); }
-.hero p {
-  max-width: 620px;
-  margin: 0 auto 25px;
-  color: #78675d;
-  font-size: 18px;
-}
+h2 { color: #8f2635; font-size: 32px; }
+section { padding: 50px 8%; text-align: center; }
+p { max-width: 700px; margin: 15px auto; }
 .button {
   display: inline-block;
-  background: var(--red);
+  background: #8f2635;
   color: white;
-  padding: 13px 24px;
-  border-radius: 30px;
+  padding: 12px 24px;
+  border-radius: 25px;
   text-decoration: none;
-  font: bold 14px Arial, sans-serif;
-}
-.button:hover { background: #76202b; }
-section { padding: 65px 7%; text-align: center; }
-.paper { background: #fffdf9; border-block: 1px solid #efdfcc; }
-.content { max-width: 780px; margin: auto; }
-.story {
-  text-align: left;
-  background: white;
-  border: 1px solid #efdfcc;
-  padding: 30px;
-  border-radius: 18px;
-  margin-top: 28px;
-}
-.story p { color: #78675d; }
-.cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  max-width: 1000px;
-  margin: 30px auto 0;
-  text-align: left;
 }
 .card {
-  padding: 24px;
   background: white;
-  border: 1px solid #efdfcc;
+  border: 1px solid #e5cdb7;
   border-radius: 16px;
+  padding: 24px;
+  margin: 20px auto;
+  max-width: 750px;
 }
-.card p { color: #78675d; }
-.icon { font-size: 32px; }
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  max-width: 1000px;
-  margin: 30px auto;
+  grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+  gap: 15px;
+  max-width: 900px;
+  margin: 25px auto;
 }
-.photo-slot {
+.photo {
+  background: #f0dfce;
+  border: 2px dashed #b9987c;
+  border-radius: 14px;
   min-height: 180px;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 8px;
-  background: #f3e5d7;
-  border: 2px dashed #c7a98c;
-  border-radius: 16px;
-  color: #785d4c;
+  padding: 25px;
 }
-.photo-slot span { font-size: 32px; }
+.photo img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
 footer {
-  text-align: center;
-  background: var(--brown);
+  background: #49352f;
   color: white;
-  padding: 30px 15px;
-}
-@media(max-width:700px) {
-  nav { justify-content: center; }
-  .hero { padding: 60px 20px; }
-  .cards, .gallery { grid-template-columns: 1fr; }
-  .photo-slot { min-height: 130px; }
+  text-align: center;
+  padding: 25px;
 }
 </style>
 </head>
 <body>
 
 <nav>
-  <div class="logo">🐾 Brownsee Wee</div>
-  <div>
-    <a href="#story">My Story</a>
-    <a href="#adventures">Adventures</a>
-    <a href="#gallery">Photos</a>
-  </div>
+  🐾 BROWNSEE WEE
+  <br>
+  <a href="#story">My Story</a>
+  <a href="#life">My Life</a>
+  <a href="#photos">My Photos</a>
 </nav>
 
 <header class="hero">
-  <div class="eyebrow">A little dog, a big world</div>
-  <h1>Life Through<br>My Paws</h1>
+  <div style="font-size:65px">🐶</div>
+  <p>WELCOME TO MY LITTLE WORLD</p>
+  <h1>I'm Brownsee Wee!</h1>
   <p>
-    Hello, I'm Brownsee Wee! I travelled from Ireland
-    to Singapore, found my family, and began a new
-    chapter filled with love and adventures.
+    A little dog with a big journey, a loving family,
+    and a life full of memories.
   </p>
-  <a class="button" href="#story">Discover My Story ♥</a>
+  <a class="button" href="#story">Discover My Story ❤️</a>
 </header>
 
-<section class="paper" id="story">
-  <div class="content">
-    <div class="eyebrow">My journey</div>
-    <h2>From Ireland to Singapore 🌍</h2>
-    <article class="story">
-      <h3>Every Paw Has a Story</h3>
-      <p>
-        My journey began in Ireland, far away from the
-        home I know today. I was transported all the
-        way to Singapore, where a new chapter of my
-        life was waiting to begin.
-      </p>
-      <p>
-        One day, my future owner's father chose me
-        from a pet shop and brought me home. That was
-        the beginning of my life with my family!
-      </p>
-      <p>
-        Today, I live happily in Singapore, surrounded
-        by the people who love me. Ireland was where
-        my journey began, but Singapore is where I
-        have made my home.
-      </p>
-      <p><strong>And my adventures are only beginning! ❤️</strong></p>
-    </article>
+<section id="story">
+  <h2>My Story 🌍</h2>
+  <div class="card">
+    <h3>From Ireland to Singapore</h3>
+    <p>
+      Hello! My name is Brownsee Wee. My journey began
+      in Ireland, far away from my home today.
+    </p>
+    <p>
+      I travelled all the way to Singapore and arrived
+      at a pet shop, hoping to find a family of my own.
+      One day, my owner's father chose me and brought
+      me home.
+    </p>
+    <p>
+      That was the beginning of a wonderful new chapter!
+      Today, I live happily in Singapore, surrounded by
+      my family and the love that makes a house a home.
+    </p>
+    <p><strong>My journey brought me across the world,
+    but my heart found a home in Singapore. ❤️</strong></p>
   </div>
 </section>
 
-<section id="adventures">
-  <div class="eyebrow">Little paws, lovely memories</div>
-  <h2>My Little World</h2>
-  <div class="cards">
-    <article class="card">
-      <div class="icon">🌍</div>
-      <h3>My Journey</h3>
-      <p>From Ireland to Singapore, the journey that brought me home.</p>
-    </article>
-    <article class="card">
-      <div class="icon">🎾</div>
-      <h3>My Adventures</h3>
-      <p>My exciting discoveries, playful days and favourite places.</p>
-    </article>
-    <article class="card">
-      <div class="icon">💗</div>
-      <h3>My Everyday Life</h3>
-      <p>Cosy moments and all the little things that make life special.</p>
-    </article>
+<section id="life" style="background:#f5e7d9">
+  <h2>Life Through My Paws 🐾</h2>
+  <div class="card">
+    <h3>My Personality</h3>
+    <p>
+      I am a curious little dog who loves discovering
+      the world around me. Every day brings something
+      new to explore!
+    </p>
+  </div>
+  <div class="card">
+    <h3>My Family</h3>
+    <p>
+      My family is an important part of my story.
+      They give me a place to belong and memories
+      that make my life special.
+    </p>
+  </div>
+  <div class="card">
+    <h3>My Adventures</h3>
+    <p>
+      From little everyday moments to exciting new
+      discoveries, this is where my adventures live.
+      There is always another story to tell!
+    </p>
   </div>
 </section>
 
-<section class="paper" id="gallery">
-  <div class="eyebrow">A thousand little memories</div>
-  <h2>My Photo Gallery 📸</h2>
-  <p>These spaces are ready for your own photos of Brownsee!</p>
+<section id="photos">
+  <h2>Brownsee's Photo Gallery 📸</h2>
+  <p>Add your favourite photos of Brownsee here!</p>
   <div class="gallery">
-    <div class="photo-slot">
-      <span>🐶</span>
-      <strong>Photo 1</strong>
-      <small>Add a photo when ready</small>
-    </div>
-    <div class="photo-slot">
-      <span>🐾</span>
-      <strong>Photo 2</strong>
-      <small>Add a photo when ready</small>
-    </div>
-    <div class="photo-slot">
-      <span>❤️</span>
-      <strong>Photo 3</strong>
-      <small>Add a photo when ready</small>
-    </div>
+    <div class="photo">🐶<br><strong>My Favourite Photo</strong></div>
+    <div class="photo">🐾<br><strong>My Adventures</strong></div>
+    <div class="photo">❤️<br><strong>My Family Memories</strong></div>
   </div>
 </section>
 
 <footer>
-  <p>Made with ♥ for Brownsee Wee</p>
-  <small>Four paws. One big adventure. Endless memories.</small>
+  <h3>Brownsee Wee 🐶</h3>
+  <p>Four paws. One big adventure. Endless love.</p>
+  <small>Made with love for Brownsee Wee.</small>
 </footer>
 
 </body>
